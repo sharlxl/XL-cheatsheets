@@ -8,14 +8,12 @@
 
 - HTML
 - Javascript
-- Next JS
-- Materials UI
+- Docusaurus
 
-## Routes done
+## Cheatsheets done
 
 :(
 
-## Routes (working on)
+## Cheatsheets (working on)
 
-- /login
-- /cheetsheets/html
+- HTML
