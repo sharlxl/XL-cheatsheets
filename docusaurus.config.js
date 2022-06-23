@@ -70,19 +70,19 @@ const config = {
             position: "left",
             label: "Cheetsheets",
           },
-          {
-            type: "doc",
-            docId: "Docusaurus/intro",
-            position: "left",
-            label: "Docusaurus",
-          },
+          // {
+          //   type: "doc",
+          //   docId: "Docusaurus/intro",
+          //   position: "left",
+          //   label: "Docusaurus",
+          // },
           // { to: "/blog", label: "Blog", position: "left" },
 
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "Docusaurus GitHub",
-            position: "right",
-          },
+          // {
+          //   href: "https://github.com/facebook/docusaurus",
+          //   label: "Docusaurus GitHub",
+          //   position: "right",
+          // },
         ],
       },
       footer: {
