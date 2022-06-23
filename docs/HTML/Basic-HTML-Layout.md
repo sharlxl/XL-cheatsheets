@@ -30,8 +30,8 @@ sidebar_position: 2
 
       <section>
         <!-- content should be unique to the individual page  -->
-        <!-- fieldset  -->
         <!-- form -->
+        <!-- fieldset  -->
         <!-- legend -->
         <!-- label  -->
         <!-- input  -->
