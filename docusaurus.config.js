@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "XL-cheeets",
+  title: "XL-Cheeets",
   tagline: "Programming for dummys 101",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
@@ -61,7 +61,7 @@ const config = {
         title: "XL-cheeets",
         logo: {
           alt: "Logo Here",
-          src: "img/logo.svg",
+          src: "img/x-logo.png",
         },
         items: [
           {
