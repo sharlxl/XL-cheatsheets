@@ -13,6 +13,10 @@ Xl-Personal notes that she THINKS might come in handy.
 
 > [npmjs](https://www.npmjs.com/)
 
+> [Markdown guide](https://www.markdownguide.org/basic-syntax/)
+
+> [mdx](https://mdxjs.com/)
+
 ## Tools
 
 > [ColorPalette Generator](https://mycolor.space/)
@@ -22,8 +26,6 @@ Xl-Personal notes that she THINKS might come in handy.
 > [gitignore Generator](https://www.toptal.com/developers/gitignore)
 
 > [Regex](https://regex101.com/)
-
-> [Markdown guide](https://www.markdownguide.org/basic-syntax/)
 
 > [JSON Formatter](https://jsonformatter.curiousconcept.com/)
 
