@@ -29,6 +29,8 @@ Xl-Personal notes that she THINKS might come in handy.
 
 > [JSON Formatter](https://jsonformatter.curiousconcept.com/)
 
+> [Lorem Ipsum](https://loremipsum.io/)
+
 ## Libraries
 
 > [Tailwind](https://tailwindcss.com/)
@@ -50,3 +52,4 @@ Xl-Personal notes that she THINKS might come in handy.
 - [CSS](https://htmlcheatsheet.com/css/)
 - [JS](https://htmlcheatsheet.com/js/)
 - [React](https://www.freecodecamp.org/news/the-react-cheatsheet/)
+- [Next.js + prisma postgresSQL blog](https://vercel.com/guides/nextjs-prisma-postgres)
