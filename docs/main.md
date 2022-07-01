@@ -31,6 +31,8 @@ Xl-Personal notes that she THINKS might come in handy.
 
 > [Lorem Ipsum](https://loremipsum.io/)
 
+> [Express app generator](https://expressjs.com/en/starter/generator.html)
+
 ## Libraries
 
 > [Tailwind](https://tailwindcss.com/)
