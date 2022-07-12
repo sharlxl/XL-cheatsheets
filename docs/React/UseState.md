@@ -1,5 +1,5 @@
 ---
-title: "React Hooks"
+title: "useState()"
 sidebar_position: 2
 ---
 
@@ -41,43 +41,3 @@ const handleDoveChange = (event) => {
 ```
 
 `...` spread operators is used in states to shallow copy over the rest to the state and only amend the selected value
-
----
-
-## useRef()
-
-```jsx
-const [username, setUsername] = useState("");
-const usernameRef = useRef();
-
-const focus = () => {
-  usernameRef.current.focus();
-};
-
-<input
-  ref={usernameRef}
-  value={username}
-  onChange={(e) => setUsername(e.target.value)}
-/>;
-```
-
-## useEffect()
-
-```jsx
-useEffect(() => {
-  console.log("on mount & unmount");
-
-  //add event listener(using vanilla JS)
-
-  //clean up function -> remove eventlistener
-});
-useEffect(() => {
-  console.log("On every state change");
-  return () => {
-    console.log("clean up function");
-    if (clicked > 4) {
-      setClicked(0);
-    }
-  };
-}, [clicked]);
-```
