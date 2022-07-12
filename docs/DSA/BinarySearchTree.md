@@ -38,7 +38,7 @@ Taking a few moments, you'd find that both are a bit clunky and non ideal.
 
 What would fit better would be a tree.
 
-![Binary Tree 1](/images/Binarytree1.png "Binary Tree 1")
+![Binary Tree 1](./images/Binarytree1.png)
 
 Trees are a different data structure than arrays or objects and they fit nicely for hierarchical relationships as above. They can also work for familial relationships, the DOM or the file structure on your computer.
 
@@ -56,7 +56,7 @@ Trees have depths/heights based on the number of nodes that branch off of the ro
 
 A binary tree is a tree that has a constraint that there can only be a maximum of 2 nodes off of each node
 
-![Binary Tree 2](/images/binarytree2.png "Binary Tree 2")
+![Binary Tree 2](./images/binarytree2.png)
 
 ---
 

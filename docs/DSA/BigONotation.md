@@ -18,7 +18,7 @@ Additionally, Big O can be represented visually with the execution time/memory o
 
 ## Class of Complexity
 
-![BigOChart](/images/BigOChart.jpeg "BigOChart")
+![BigOChart](./images/BigOChart.png)
 
 ### Constant O(1)
 
@@ -108,4 +108,4 @@ The complexity of an algorithm that is factorial increases faster than any other
 
 This type of complexity is considered inefficient.
 
-![Comparing](/images/CExCK8P.png "Comparing")
+![Comparing](./images/CExCK8P.png)
