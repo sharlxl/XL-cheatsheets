@@ -5,6 +5,18 @@ sidebar_position: 2
 
 ## useState()
 
+```jsx title="syntax"
+const [state, setState] = useState(initialstate);
+```
+
+useState does exactly what it says—it allows us to use stateful values in function components.
+
+useState is used instead of a simple variable because when state is updated, our component re-renders, usually to display that updated value.
+
+Like all hooks, we call useState at the top of our component and can pass it an initial value to put on its state variable.
+
+We use array destructuring on the value returned from useState to access (1) the stored state and (2) a function to update that state.
+
 ```jsx title="simple state"
 const [chicken, setChicken] = useState(0);
 ```

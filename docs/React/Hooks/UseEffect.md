@@ -1,9 +1,34 @@
 ---
-title: "React Hooks"
+title: "UseEffect()"
 sidebar_position: 4
 ---
 
 ## useEffect()
+
+```jsx title="syntax"
+useEffect(() => {
+  //Runs on every render
+});
+
+useEffect(() => {
+  //Runs only on the first render
+}, []);
+
+useEffect(() => {
+  //Runs on the first render
+  //And any time any dependency value changes
+}, [prop, state]);
+```
+
+If we want to interact with the “outside world”, such as using an API, we use the useEffect hook.
+
+useEffect is used to perform a side effect, which means to perform an operation that exists outside of our app that doesn’t have a predictable result.
+
+The basic syntax of useEffect requires a function as a first argument and an array as the second argument.
+
+If we need to use a value that comes from outside the effect function, it must be included in the dependencies array.
+
+If that value changes, the effect function will be re-executed.
 
 ```jsx
 useEffect(() => {

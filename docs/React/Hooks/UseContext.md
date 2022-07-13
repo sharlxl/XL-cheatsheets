@@ -5,11 +5,53 @@ sidebar_position: 5
 
 ## useContext()
 
+```jsx title="syntax"
+
+//create the context
+
+import * as React from 'react';
+
+const authContext = React.createContext({status:null,login:()=>{}});
+
+export default authContext;
+
+//=====================//
+
+//wrapping the component in the component where you want to use it.
+const App = () => {
+  //using the state to dynamicallly pass the values to the context
+
+  const [authstatus, setauthstatus] = useState(false);
+  const login = () => {
+    setauthstatus(true);
+  };
+  return (
+    <React.Fragment>
+      <AuthContext.Provider value={{ status: authstatus, login: login }}>
+        <Auth />
+      </AuthContext.Provider>
+    </React.Fragment>
+  );
+};
+export default App;
+
+//=====================//
+
+//importing, using and manipulating the context values.
+
+const authContext = useContext(initialValue);
+```
+
+React context allows us to pass data to our component tree without using props.
+
+The problem with props is that sometimes we pass them through components that don’t need to receive them. This problem is called props drilling.
+
+> Before using Context, its best to see if our components can be better organized to avoid passing props through components that don’t need it.
+
 use context usually used for login details/ authentication
 
-use context is usually place at <App/>
-
-\*\*will rerender the whole app during changes
+use context is usually place at `<App/>`
+will rerender the whole app during changes
 
 ```js title="App.js"
 import React, { useState } from "react";
