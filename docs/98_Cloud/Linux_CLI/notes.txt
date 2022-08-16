@@ -1,0 +1,251 @@
+Virtualbox + Ubuntu
+Download and setup virtualbox.
+Open downloaded ubuntu exe installation file. 
+Done.
+
+To explore CentOS and VMware
+
+What is UNIX?
+Grandpa of alot of modern OS
+
+True unix vs unix-like
+Basically the same in terms of users.
+Its just whether they can legally use the name UNIX or not.
+
+Unix Manual, first edition (bell-labs.com)
+Microsoft Word - man11.doc (bell-labs.com)
+
+CLI --find
+
+Command structure
+command -options arguments
+
+Options can be combined -hjM
+
+< man > - Manual Page
+< type > - what type of command 
+< which > - where the command is located.
+
+ Some built in function does not have a manual
+< help > can be used for more info for those which doesnt have a manual page.
+
+Navigation
+/ - root 
+~ - home
+
+Xdg-open / - opens root directory
+Xdg-open ~  - opens home directory
+
+< pwd > - print working directory
+
+
+< file > - identify the type of file, the file name does not change the type.
+Avoid using whitespace and symbols in file names
+
+< nano > - text editor. Can create a new file 
+nano +linenumber filename  -> straight to the line when opening the text editor.
+Inside the text editor you can insert a whole text file into another text file. (^R)
+
+< rm -d > = < rmdir >
+
+Use rm -ri or -rI (SAFER) can double check
+
+< mv > - can move and rename file
+< cp > - copy a file/directory etc
+
+Command Line shortcuts
+
+Clearing & Jumping Lines
+Ctrl-l - clear line
+Ctrl-a - goes back to the beginning of the line 
+Ctrl-e - goes back to the end of the line 
+
+Jumping Characters & Words
+Ctrl-f - move forward one char
+Ctrl-b - move backwards one char
+Alt-f - move forward one word
+Alt-b - move backwards one word
+
+Swapping Characters & Words
+Ctrl-t - swaps the character your cursor is hovering over
+Alt-t - swap words.
+
+Killing Lines, Words & More
+Ctrl-k -kill the text from current cursor to end of the line
+Ctrl-u -kill the text from current cursor to start of the line
+
+Yanking from Kill-Ring
+alt -d - kill the text from the current cursor location to the end of the word
+Ctrl-w/alt-delete - kill the text from the current cursor location to the start of the word
+
+History command & Expansion
+Bash history = cmd line history
+
+*cat - concatenate and prints contents of file
+Check if the file contains anything and what it contains.
+Can concat multiple files
+
+*less - The less command displays the contents of a file, one
+page at a time. We can navigate forwards and
+backwards through the file, which is especially useful
+with very large files.
+
+- press space or f to go to the next page of the file
+- press b to go back to the previous page
+- press Enter or Down arrow to scroll by one line
+- to search, type forward slash / followed by a pattern
+Move forward one line: Down Arrow, Enter, e, or j
+Move backward one line: Up Arrow, y, or k
+Move forward one page: Space bar or Page Down
+Move backward one page: Page Up or b
+Scroll to the right: Right Arrow
+Scroll to the left: Left Arrow
+Jump to the top of the file: Home or g
+Jump to the end of the file: End or G
+Jump to a specific line: Type the line number  and then hit “g”
+Jump to a percentage way through the file: Type the percentage and then hit “p” or “%.” (You can even enter decimal values, so to jump to the point 27.2 percent through the file, type “27.2” and then hit “p” or “%.”  Why would you want to use decimals? I honestly have no idea.)
+Search forward: Hit “/” and type your search, like “/Jekyll”, and press Enter
+Search backward: Hit “?” and type your search, like “/Hyde”, and press Enter
+Next matching search item: n
+Previous matching search item: N
+Quit: q
+
+- press q to quit
+
+*head- The head command prints a portion of a file, starting
+from the beginning of the file. By default, it prints the
+first 10 lines of a file.
+ 
+*tail- The tail command works similarly to the head
+command, except it prints from the END of a file. By
+default, it prints the last 10 lines of a file.
+
+*sort - The sort command outputs the sorted contents of a file
+(it does not change the file itself). By default, it will sort
+the lines of a file alphabetically.
+Lowercases get printed prior to Uppercases.
+Does Not sort whole numbers. Need -n
+
+-wc - The word count command can tell us the number of
+words, lines, or bytes in files. By default, it prints out
+three numbers: the lines, words, and bytes in a file.
+
+We can use the -l option to limit the output to the
+number of lines.
+
+The -w option limits the output to the number of words
+in the file.
+
+-sorting by field
+We can specify a particular "column" that we want to sort by, using the -k option followed by a field number
+
+-tac - tac (cat spelled backwards) will concatenate and print files in
+reverse.
+
+-rev - the rev command prints the contents of a file, reversing the order
+of each line. Think of it as a "horizontal" reverse, whereas tac is a
+"vertical" reverse.
+
+Redirection
+
+> - redirects standard output to another place.
+If you do it a second time, the data gets overwritten. (Probably need a condition)
+
+>> to keep existing data and append to the file.
+
+< - redirects the content of a file into the input field.
+
+Combining both:
+Cat < original.txt > output.txt
+
+2> - redirection for error
+
+Standard input = 0<
+Standard output = 1>
+Standard err = 2>
+
+Combining all: 
+cat bees.txt ants.txt > insects.txt 2> error.txt
+cat bees.txt ants.txt > insects.txt 2>> errors.txt
+
+2>&1 = redirect standard error to the same location as standard output
+&> = same as the above works on the later bash versions
+&>> = does the same appends the results instead of overwriting
+
+Piping:
+
+| - pipe char
+
+Eg. command1 | command2
+Output from command 1 will be passed to command 2
+
+Basically chains commands
+
+Redirection vs piping
+Redirection connects a command to a file
+Piping connects common to another command
+
+ Tr = translation seldom used.. But can be used to change char or changing them to upper or lowercase
+
+Tee = reads standard input and copies to BOTH standard output and a file.
+
+Eg, cat colors.txt words.txt | tee colorsAndWords.txt | wc -w
+Will give you word count on the terminal and the concat colors and words into the new file
+
+Du - disk utility
+
+Locate find a particular file you are searching for.
+
+Find prints out every file including nested items in your current directory
+Find -type f (find only the files)
+Find -type d (find only directories)
+Find ~/Desktop -name “*.txt”
+-name is case sensitive
+-iname ignores casing
+-size +1G (larger than 1Gb)
+-size -500M (smaller than 500Mb)
+-size 20k (exactly 20Kb)
+-user shar
+
+Timestamps:
+Mtime -modified time
+Only changes when the CONTENTS INSIDE are changed.
+Renaming, moving etc does not affect it
+
+Ctime -change time includes every changes to the file.
+
+atime - updated whenever we access/ open/read the file
+
+Logical operators
+-and
+-or 
+-not
+
+Find -exec command {} ;
+
+{} represents each of the individual path name
+
+Find ~ -type f - empty -exec ls -l ‘{}’ ‘:’
+
+Change the exec to ok creates a prompt that will ask before executing the command.
+
+Find ! -empty -exec cp ‘{}’ ‘{}_COPY’ ‘;’
+
+Find everything that is not empty and copy it
+
+Xargs - turns standard int into arguments 
+
+GREP
+Grep search within files.
+Grep will print each line that matches a pattern we provide
+
+Grep recursive search
+Grep -r
+
+Regex
+
+
+Shebang! - #!
+
+Cron 
+
