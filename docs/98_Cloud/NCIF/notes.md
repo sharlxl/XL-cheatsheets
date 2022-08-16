@@ -62,3 +62,94 @@ Typically accross multiple cities and countries.
 - Server provide centralised control over network resources.
 - CENTRALISED user accounts, security, and access controls to simplify network administration
 - difficult to sertup and requires an IT administrator.
+
+## Computer Networking protocols
+
+Computer communicate with each other with network protocols.  
+Protocols are rules governing how machines exchange data and enable effective communication.
+
+#### Physical protocols
+
+describe the medium (wiring), the connections (RJ-45 port), and the signal (voltage level on a wire)
+
+#### Logical Protocols
+
+Software controlling how and when data is sent and recieved to computers, supporting physical protocols.
+computer networks depend on many diffrent types of protocols in order to work properly.
+
+Example of common <u>TCP/IP suite of protocols</u>
+
+- Web Communication : <i>HTTP</i>
+- E-mail: <i>POP3, SMTP, IMAP</i>
+- File transfers: <i>FTP</i>
+
+## The OSI Model
+
+The Open System Interconnection (OSI) Reference Model
+
+- gives us a guide to understand how networks operate
+- it is only a REFERENCE model.
+- not implemented IRL, TCP/IP is being implemented instead.
+
+### OSI Model stack
+
+THe OSI Model breaks down the complex task fo computer to computer network comms into 7 layers.
+
+#### Lower(Media) Layers (NetWork)
+
+1. (Bit) Physical Layer
+2. (Frame) Data Link Layer
+3. (Packet) Network Layer
+
+#### Upper(Host) Layers (Computer)
+
+4. (Segment) Transport Layer
+5. (Data) Session Layer
+6. (Data) Presentation layer
+7. (Data) Application layer
+
+### TCP/IP
+
+The most common used protocol suite in the networkign world.
+standard for computer networking, based on a 4 layer model that is similar to OSI
+
+#### MAc addresses
+
+- Physical address
+- physically burned on the NIC
+- OSI layer 2
+- Local LAN communication
+
+#### IP Address
+
+An IP Address is a logical address used in order to uniquely identify a device on an IP network
+a device on an IP address.
+
+- its a network layer address associated with routing.
+- OSI layer 3
+- TCP/IP layer 2
+- WAN communication
+
+## Duplex Communication
+
+#### Half duplex
+
+Can send and recieve data but not at the same time
+
+#### Full duplex
+
+Can send and recieve data simultanenously
+
+## Network Transmission types
+
+- Unicast (One to One)
+- Multicast (One to Many)
+- Broadcast (One to All)
+
+## Eternet
+
+Refers to a family of standards that define the physical and logical aspects of the world most popular type of LAN
+The standard communication protocol for bnuilding a local area network(LAN)
+
+- Physical (cabling, connectors, equipements)
+- Logical (Network Access Method)
