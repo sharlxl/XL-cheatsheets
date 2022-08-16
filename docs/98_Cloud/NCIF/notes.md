@@ -153,3 +153,67 @@ The standard communication protocol for bnuilding a local area network(LAN)
 
 - Physical (cabling, connectors, equipements)
 - Logical (Network Access Method)
+
+#### Physical Topologies
+
+describe the placement of network devices and how they are physically connected.
+
+#### Logical Topologies
+
+describes how data flows throughout a network
+
+### Wired Topology
+
+#### Bus Topology (NO longer being used)
+
+All devices are connected to a single coaxial network cable
+only one end device can be active on the network at the same time.
+a single break can takedown the entire network.
+terminator are required at both ends of the cable to prevent a signal bounce.
+
+#### Ring Topology
+
+All devices are connected in a circular fashion
+Data travels from node to node with each computer handling data, either unidirectional or bidirectional.
+failure of a single node can take down the entire network
+
+#### Star Topology
+
+All devices are connected to a central connecting device, which is usually a switch
+Popular in today's network.
+used in most large and small networks
+central device is a single point of failure.
+
+#### Meshed Topology
+
+Each device is connected to every other device by seperate cabling.
+Highly redundant and fault tolerance.
+Expensive to install
+Commonly used in enterprise networks and WANs
+
+- Partial mesh
+- Full Mesh
+
+## Wireless Toplogies
+
+Utilise radio frequencies(RF) to communicate
+
+#### Adhoc
+
+Peer to Peer (P2P)
+no Wireless Access Points(WAP)
+PAN
+
+#### Infrastructure
+
+Wireless network that uses a WAP as its central connecting device
+common in home and small offices
+
+#### Mesh
+
+Just like wired mesh design, wireless mesh network utilizes several wireless access points to create a robust wireless network that is
+
+- scalabe
+- reliable
+- self healing
+  common in larger homes and businesses
