@@ -78,3 +78,64 @@ etc
 | Class A | Network | Host    | Host    | Host  |
 | Class B | Network | Network | Host    | Host  |
 | Class C | Network | Network | Network | Host  |
+
+### Address Classes (Detailed)
+
+|  Class  | Leading Bits  | NetWork Bits | Remaining Bits | No of Networks | Host per Network | Default Subnet Mask |
+| :-----: | :-----------: | :----------: | :------------: | :------------: | :--------------: | :-----------------: |
+| Class A |   0(1-126)    |      8       |       24       |    128(2⁷)     | 16,777,216(2²⁴)  |      255.0.0.0      |
+| Class B |  10(128-191)  |      16      |       16       |  16,384(2¹⁴)   |   65,536(2¹⁶)    |     255.255.0.0     |
+| Class C | 110(192-223)  |      24      |       8        | 2,097,152(2²¹) |     256(2⁸)      |    255.255.255.0    |
+| Class D | 1110(224-239) |      -       |       -        |       -        |        -         |          -          |
+| Class E | 1111(240-255) |      -       |       -        |       -        |        -         |          -          |
+
+### CIDR Notation
+
+(Classless Inter-Domain Routing)
+A methodology for subnetting
+"slash" Notation tells you how many bits are associated with the subnet mask
+
+- 8/ = 11111111.00000000.00000000.00000000
+  OR 255.0.0.0
+
+  192.168.1.0 /24 = 255.255.255.0
+  10.1.0.0 /16 = 255.255.0.0
+  196.10.10.0 /25 = 255.255.255.128
+
+### The Power of 2
+
+|        |          |          |          |
+| :----: | :------: | :------: | :------: |
+|  2=2¹  |   2²=4   |   2³=8   |  2⁴=16   |
+| 2⁵=32  |  2⁶=64   |  2⁷=128  |  2⁸=256  |
+| 2⁹=512 | 2¹⁰=1024 | 2¹¹=2048 | 2¹²=4096 |
+
+#### Power of 2 to determine Network Hosts
+
+> Hosts Per Network = 2<sup>h</sup> - 2
+
+Class A - Hosts = 24 bits = 2²⁴ - 2 = 16,777,214 (useable IP addresses)
+
+### Public vs Private IPv4
+
+|                  Public                   |                         Private                          |
+| :---------------------------------------: | :------------------------------------------------------: |
+|              Original design              |                                                          |
+|           Registered public IP            |          Unregistered - Free for use by anyone           |
+|    Assigned by ISP to business or home    |     Designed for use within private internal network     |
+| Globally unique(Web/DNS servers, Routers) |              Can be use over and over again              |
+|                                           |       Cannot be used or routed on a public network       |
+|                                           | utilises NAT to "speak" to public networks ie, internet. |
+
+The world was running out of public IP addresses by 1990s
+
+### The Loopback address
+
+127.0.0.0 to 127.255.255.255 is reserved for loopback AKA localhost address.
+127.0.0.1 is typically confirgured as the default loopback address on operating systems,
+
+used for diagnostic purposes to check that TCP/IP is correctly installed on a host operating system.
+If you can sucessfully ping 127.0.0.1 or any IP within the loopback range, then TCP/IP on your comp is properly working.
+`ping 127.0.0.1`
+`ping localhost`
+`ping loopback`
