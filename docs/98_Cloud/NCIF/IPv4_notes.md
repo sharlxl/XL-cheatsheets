@@ -139,3 +139,68 @@ If you can sucessfully ping 127.0.0.1 or any IP within the loopback range, then 
 `ping 127.0.0.1`
 `ping localhost`
 `ping loopback`
+
+### IPv4 to IPv6 Tunneling Protocols
+
+#### 4to6
+
+Encapsulate IPv4 data into IPv6 Tunnel
+
+#### 6in4
+
+Encapsulate IPv6 data into n IPv4 Tunnel and can traverse IPv4 NAT
+
+#### Teredo
+
+Microsoft Windows IPv6 tunnelign protocol similar to 6in4 that supports NAT
+
+#### Miredo
+
+A Linux and unix based open source version of Teredo
+
+## Assigning IP addresses
+
+### Static vs Dynamic
+
+| Static                                                                                                  | Dynamic                                                                           |
+| :------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------- |
+| IP is manually configured                                                                               | Dynamically configured <br>- DHCP <br>- APIPA <br>- Stateless server              |
+| Doesnt Change                                                                                           | Auto-Configuration                                                                |
+| Commonly used: <br>- DNS Servers <br>- Web Servers <br>- Network Printers <br>- Default Gateway(Router) | Commonly used for <b>end-user devices</b> that doesnt require a static IP address |
+
+### DHCP
+
+#### Understanding the DHCP DORA Process
+
+1. DHCP discover
+2. DHCP Offer
+
+> IF no DHCP server is available, the client will use Automatic PRivate IP addressing (APIPA)
+
+3. DCHP Request
+4. DHCP Acknowledgement
+
+When configuring DHCP, you'll typically have the option to configure"
+
+- IP address Scope/pool
+- Default Gateway (Router)
+- DNS Servers
+- IP address Exclusions
+- Mac Address Reservations
+- Lease Duration
+
+#### DHCP Relay Agents
+
+A system used to forward DHCP requests and replies between a DHCP server and clients when the server is on a different network
+This allows you to not have a DHCP server on each network
+
+### APIPA
+
+Windows Operating System Feature
+Allows DHCP-configured clients to self-configure IP addresses if no DHCP server is available on the network.
+Windows OS can self -configure an APIPA IP address & subnet mask.
+
+- ClassB IP address Range: ---.---.-.1 to ---.---.---.254
+- Subnet Mask: 255.255.0.0
+
+\*\* APIPA addresses are link-local, meaning they're not routable
