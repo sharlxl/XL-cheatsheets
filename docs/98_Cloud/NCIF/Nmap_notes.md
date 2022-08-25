@@ -111,3 +111,115 @@ Ping sweep:
 `-T 0 (paranoid)| 1 (sneaky)| 2 (polite)| 3 (normal)| 4 (aggressive)| 5 (insane)`
 
 #### Nmap Scripting Engine
+
+## Background info on Lua
+
+- used in wiresharks, video games
+- well-documented API
+- Light weight, embeddable scripting language
+- selected by nmap project instead of creating one
+
+## Basic syntax of LUA
+
+[Try LUA Here](https://www.lua.org/demo.html)
+
+```lua title="Commenting"
+
+-- This is a single line comment
+
+---
+--convention
+--for
+-- multi line comments.
+---
+
+```
+
+```lua title="variable assignment"
+z=10
+```
+
+```lua title="overloaded assignment"
+a, b, c = 0, 1
+
+print(a,b,c)
+
+-- output> 0 1 nil
+```
+
+### Variable scope
+
+```lua
+--Global Variable
+foobar=45
+
+-- Local Variable
+local poobar=45
+```
+
+### Function
+
+```lua
+
+function attackSomeHost(host, port)
+    local exploit= 'Attack'
+    --do some stuff
+    return exploit-result
+end
+```
+
+### Tables
+
+All data structures are tables
+
+- Arrays
+- Linked lists
+- Matrices
+- etc
+
+```lua
+--declaring a new array
+a = {}
+
+-- for loop
+for i=1, 1000 do
+    a[i]=0
+end
+```
+
+### If, Then (If Else statements)
+
+```lua
+if line > MAXLINES then
+    showpage()
+    line=0
+end
+
+if op == "+" then
+    r = a + b
+elseif op == "-" then
+    r = a - b
+else
+    error("invalid operation")
+end
+```
+
+### For Loops
+
+```lua
+for _, cookie in pairs(response.cookies) do
+    print cookie
+end
+--pairs is to look inside each key value pairs.
+```
+
+### While loops
+
+```lua
+local a = 1
+
+while (a < 10) do
+    print("The Value of a: ", a)
+    a = a + 1
+end
+```
