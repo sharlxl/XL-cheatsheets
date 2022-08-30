@@ -35,6 +35,8 @@ Host Server to generate Public and Private keys
 
 `ssh-copy-id user_1@serverb`
 
+> Do it from the server that wants to connect to another server to implement something.
+
 ## OpenSSH config file
 
 > /etc/ssh/sshd_config
