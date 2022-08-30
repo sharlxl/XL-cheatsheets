@@ -8,3 +8,8 @@ Block Devices are stored in the /dev dir, along with other device files. Device 
 /dev/vda, /dev/vdb - virtio-blk paravirtualised storage (some vitural machines)
 
 `fdisk`
+
+## Locating files
+
+`locate`  
+`find`
