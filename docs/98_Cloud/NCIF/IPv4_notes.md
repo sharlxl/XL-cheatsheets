@@ -74,7 +74,7 @@ etc
 |   C   |      24      |     8     | 192.0.0.0 - 223.255.255.255 |
 
 |         | 8-bit   | 8-bit   | 8-bit   | 8-bit |
-| ------- | ------- | ------- | ------- | ----- |
+| :------ | :------ | :------ | :------ | :---- |
 | Class A | Network | Host    | Host    | Host  |
 | Class B | Network | Network | Host    | Host  |
 | Class C | Network | Network | Network | Host  |
@@ -162,11 +162,18 @@ A Linux and unix based open source version of Teredo
 
 ### Static vs Dynamic
 
-| Static                                                                                                      | Dynamic                                                                           |
-| :---------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
-| IP is manually configured                                                                                   | Dynamically configured </br>- DHCP </br>- APIPA </br>- Stateless server           |
-| Doesnt Change                                                                                               | Auto-Configuration                                                                |
-| Commonly used: </br>- DNS Servers </br>- Web Servers </br>- Network Printers </br>- Default Gateway(Router) | Commonly used for <b>end-user devices</b> that doesnt require a static IP address |
+| Static                    | Dynamic                                                         |
+| :------------------------ | :-------------------------------------------------------------- |
+| IP is manually configured | Dynamically configured                                          |
+|                           | - DHCP                                                          |
+|                           | - APIPA                                                         |
+|                           | - Stateless server                                              |
+| Doesnt Change             | Auto-Configuration                                              |
+| Commonly used:            | Commonly used for:                                              |
+| - DNS Servers             | <b>end-user devices</b> that doesnt require a static IP address |
+| - Web Servers             |                                                                 |
+| - Network Printers        |                                                                 |
+| - Default Gateway(Router) |                                                                 |
 
 ### DHCP
 
