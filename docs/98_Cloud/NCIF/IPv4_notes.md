@@ -162,11 +162,11 @@ A Linux and unix based open source version of Teredo
 
 ### Static vs Dynamic
 
-| Static                                                                                                  | Dynamic                                                                           |
-| :------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------- |
-| IP is manually configured                                                                               | Dynamically configured <br>- DHCP <br>- APIPA <br>- Stateless server              |
-| Doesnt Change                                                                                           | Auto-Configuration                                                                |
-| Commonly used: <br>- DNS Servers <br>- Web Servers <br>- Network Printers <br>- Default Gateway(Router) | Commonly used for <b>end-user devices</b> that doesnt require a static IP address |
+| Static                                                                                                      | Dynamic                                                                           |
+| :---------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
+| IP is manually configured                                                                                   | Dynamically configured </br>- DHCP </br>- APIPA </br>- Stateless server           |
+| Doesnt Change                                                                                               | Auto-Configuration                                                                |
+| Commonly used: </br>- DNS Servers </br>- Web Servers </br>- Network Printers </br>- Default Gateway(Router) | Commonly used for <b>end-user devices</b> that doesnt require a static IP address |
 
 ### DHCP
 

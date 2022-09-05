@@ -80,12 +80,12 @@ When 2 adjacent channels are combined to increase bandwidth
 When channels are bonded together, their bandwidths doubles  
 20MHz can be bonded to 40MHz, 80MHz or 160MHz channels
 
-| 2.4GHz                                                                                                                    | 5GHz                                                                                                                               |
-| :------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------- |
-| Longer Freq Waves<br>- Prorogates through solid surfaces well<br>- Good solution for long-distances<br>-Slower data rates | Shorter Freq waves<br>- Less Effective penetrating solid surfaces<br>- Not as effective over long distances<br>- Faster data rates |
-| Lower data rates over longer distances                                                                                    | Higher data rates over shorter distances                                                                                           |
-| Fewer Channels<br>- 3 non-overlapping channels                                                                            | More Channels<br>- 24 Non-overlapping<br>- Channel bonding available                                                               |
-| Suffers from freq congestion & interference<br>- Mircrowaves, cordless phones, and bluetooth operate at 2.4GHz            | Less congested than 2.4GHz freq<br>- Freq congestion and interference isnt a big issue                                             |
+| 2.4GHz                                                                                                                       | 5GHz                                                                                                                                  |
+| :--------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| Longer Freq Waves</br>- Prorogates through solid surfaces well</br>- Good solution for long-distances</br>-Slower data rates | Shorter Freq waves</br>- Less Effective penetrating solid surfaces</br>- Not as effective over long distances</br>- Faster data rates |
+| Lower data rates over longer distances                                                                                       | Higher data rates over shorter distances                                                                                              |
+| Fewer Channels</br>- 3 non-overlapping channels                                                                              | More Channels</br>- 24 Non-overlapping</br>- Channel bonding available                                                                |
+| Suffers from freq congestion & interference</br>- Mircrowaves, cordless phones, and bluetooth operate at 2.4GHz              | Less congested than 2.4GHz freq</br>- Freq congestion and interference isnt a big issue                                               |
 
 ## 802.11 standards
 
