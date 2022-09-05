@@ -47,3 +47,48 @@ Check the target:
 Isolating the target:  
 `systemctl isolate multi-user.target`
 \*\*not all targets can be isolated
+
+## Resetting root password
+
+`rd.break` system breaks (interruptting the boot process.)
+
+## Repairing systemd boot issues
+
+To troubleshoot service startup issues at boot time, Red Hat Enterprise Linux 8 makes the following tools available.
+
+- Boot the RHEL 8 into Rescue mode
+- Boot the RHEL 8 into Emergency mode
+- Enabling the Early Debug Shell
+
+### Booting RHEL 8 into Rescue Mode
+
+- Rescue mode is equivalent to single user mode and requires the root password.
+- Rescue mode allows you to repair your system in situations when it is unable to complete a regular booting process.
+- Rescue mode will try to mount all local file systems and start some important system services, but it does not activate network interfaces neither allow multiple users to be logged in.
+- Emergency mode provides the most minimal environment possible and allows you to repair your system even in situations when the system is unable to enter rescue mode.
+- In emergency mode, the system mounts the root file system as read-only, does not attempt to mount any other local file systems, does not activate network interfaces. and only starts few essential services.
+- In Red Hat Enterprise Linux 8, emergency mode requires the root password.
+
+#### Method 1
+
+There is a GRUB2 menu option when you boot up the system which can be selected to directly boot into rescue mode.
+
+#### Method 2
+
+During bootup, when the GRUB2 menu shows up, press the e key for edit.  
+Add the following parameter at the end of the linux line: systemd.unit=rescue.target  
+Press Ctrl+a (or Home) and Ctrl+e (or End) to jump to the start and end of the line.  
+Press Ctrl+x to boot the system with the parameter.
+
+#### Enabling the Early Debug Shell
+
+By enabling the debug-shell service with systemctl enable debug-shell.service , the system spawns a root shell onTTY9( Ctrl + Alt + F9 ) early during the boot sequence. This shell is automatically logged in as root, so that administrators can debug the system while the operating system is still booting.
+
+## Repairing File System Issues at Boot
+
+- Corrupt file system : systemd attempts to repair the file system. If the problem is too severe for an automatic fix, the system drops the user to an emergency shell.
+- Nonexistent device or UUID in `/etc/fstab`
+- Nonexistent mount point in `/etc/fstab`
+- Incorrect mount options specified in `/etc/fstab`
+
+\*\*You can use `nofail` option in the `/etc/fstab` file permits the system to boot even if the mount of that file system is not successful.
