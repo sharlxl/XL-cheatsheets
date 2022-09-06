@@ -40,4 +40,33 @@ Require far fewer hardware resources than VM, which also makes them quick to sta
 ## Planning of containers
 
 - Containers are an efficient way to provide reusability and portability of hosted apps
--
+- Can be easily moved from one environment to another, such as from development to production
+
+## Running Containers from container Images
+
+Containers runs from container images. Container images serves as blue prints for creating containers.
+Container images package an app together with all its dependencies, such as:
+
+- System Libraries
+- Programming language runtimes
+- Programming language libraries
+- Configuration settings
+- Static data files.
+
+Container images are unchangeable or immutable and are built according to specifications, such as the OCI (Open Container Initiative)
+
+### Managing containers with Podman
+
+RHEl provides a set of container tools:
+
+- podman
+- skopeo
+- Buildah
+
+These tools are compatible with OCI. can be used to manage any linux containers created by OCI-compatible container engines, such as Docker.
+
+## Selecting Container Images and Registries
+
+A Container registry is a repository for storing and retrieving container images.  
+Container images are uploaded, or pushed, to a container registry by a developer.  
+These can be downloaded, pulled from the registry to a local system so that you can use them to run containers.
