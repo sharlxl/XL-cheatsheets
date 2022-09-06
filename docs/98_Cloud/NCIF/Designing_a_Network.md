@@ -1,3 +1,8 @@
+---
+title: Designing a Network
+sidebar_position: 14
+---
+
 # 1. Identify the uses of the network
 
 - Network planning phase

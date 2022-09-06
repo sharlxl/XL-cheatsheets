@@ -1,3 +1,8 @@
+---
+title: File systems
+sidebar_position: 4
+---
+
 # Accessing Linux file systems.
 
 ## Block device

@@ -1,6 +1,12 @@
+---
+title: Modules
+sidebar_position: 3
+---
+
 # Ansible Modules
 
 System modules:
+
 - User
 - Group
 - Hostname
@@ -15,6 +21,7 @@ System modules:
 - Service
 
 Command modules:
+
 - command
 - expect
 - raw
@@ -22,6 +29,7 @@ Command modules:
 - shell
 
 Files modules:
+
 - acl
 - archive
 - copy
@@ -34,6 +42,7 @@ Files modules:
 - unarchive
 
 Database modules:
+
 - Mongodb
 - mysql
 - mssql
@@ -41,6 +50,7 @@ Database modules:
 - postgresql
 
 Cloud modules:
+
 - Amazon
 - Atomic
 - Azure
@@ -54,6 +64,7 @@ Cloud modules:
 - VMware
 
 Windows modules:
+
 - win_copy
 - win_command
 - win_file

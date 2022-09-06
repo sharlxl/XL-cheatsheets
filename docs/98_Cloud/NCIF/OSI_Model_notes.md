@@ -1,3 +1,8 @@
+---
+title: OSI Model
+sidebar_position: 4
+---
+
 # OSI Model
 
 | Layer type  | Num | Name of Layer |  Data   |

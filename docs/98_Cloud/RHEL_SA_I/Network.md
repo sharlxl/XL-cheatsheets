@@ -1,3 +1,8 @@
+---
+title: Managing Network
+sidebar_position: 6
+---
+
 # Managing Networking
 
 ## configuring networking

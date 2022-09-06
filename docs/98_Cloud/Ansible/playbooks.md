@@ -1,3 +1,8 @@
+---
+title: Playbook
+sidebar_position: 2
+---
+
 # Ansible Playbooks
 
 Playbook - a single YAML file
@@ -73,48 +78,38 @@ ansible-playbook [playbook filename]
 `ansible-playbook playbook-webserver.yaml`
 
 ===
-EXAMPLES:  
+EXAMPLES:
 
 ```yaml
--
-    name: 'Execute command to display date on web_node1'
-    hosts: web_node1
-    tasks:
-        -
-            name: 'Execute a date command'
-            command: date
--
-    name: 'Execute a command to display hosts file contents on web_node2'
-    hosts: web_node2
-    tasks:
-        -
-            name: 'Execute a command to display hosts file'
-            command: cat /etc/hosts
-
+- name: "Execute command to display date on web_node1"
+  hosts: web_node1
+  tasks:
+    - name: "Execute a date command"
+      command: date
+- name: "Execute a command to display hosts file contents on web_node2"
+  hosts: web_node2
+  tasks:
+    - name: "Execute a command to display hosts file"
+      command: cat /etc/hosts
 ```
 
 ```yaml
--
-    name: 'Execute a script on all web server nodes and start httpd service'
-    hosts: web_nodes
-    tasks:
-        -
-            name: 'Update entry into /etc/resolv.conf'
-            lineinfile:
-                path: /etc/resolv.conf
-                line: 'nameserver 10.1.250.10'
-        -
-            name: 'create a new web user'
-            user:
-                name: web_user
-                uid: 1040
-                group: developers
-        -
-            name: 'Execute a script'
-            script: /tmp/install_script.sh
-        -
-            name: 'Start httpd service'
-            service:
-                name: httpd
-                state: present
+- name: "Execute a script on all web server nodes and start httpd service"
+  hosts: web_nodes
+  tasks:
+    - name: "Update entry into /etc/resolv.conf"
+      lineinfile:
+        path: /etc/resolv.conf
+        line: "nameserver 10.1.250.10"
+    - name: "create a new web user"
+      user:
+        name: web_user
+        uid: 1040
+        group: developers
+    - name: "Execute a script"
+      script: /tmp/install_script.sh
+    - name: "Start httpd service"
+      service:
+        name: httpd
+        state: present
 ```

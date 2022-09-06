@@ -1,3 +1,8 @@
+---
+title: NFS(Network File System)
+sidebar_position: 10
+---
+
 # Network File System
 
 Network File System is a NFS Server-Client protocol used for sharing files and directories between Linux / Unix to Unix/Linux systems and vise versa.  

@@ -1,3 +1,8 @@
+---
+title: Boot Process
+sidebar_position: 8
+---
+
 # Booting
 
 ## Booting process

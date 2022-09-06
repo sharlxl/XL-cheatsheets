@@ -1,3 +1,8 @@
+---
+title: Wireless networking and IoT
+sidebar_position: 12
+---
+
 # Wireless Networking
 
 IEEE 802.11 standard for Wireless networking

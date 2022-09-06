@@ -1,4 +1,9 @@
-# Switches
+---
+title: Switches
+sidebar_position: 9
+---
+
+Switches
 
 ## Collision Domains
 

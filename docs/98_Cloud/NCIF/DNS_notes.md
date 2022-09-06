@@ -1,3 +1,8 @@
+---
+title: DNS
+sidebar_position: 8
+---
+
 # DNS servers
 
 Domain Name System

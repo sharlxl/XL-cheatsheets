@@ -1,3 +1,8 @@
+---
+title: Archiving files
+sidebar_position: 5
+---
+
 # Archiving and transferring files
 
 ## Archive using `tar`

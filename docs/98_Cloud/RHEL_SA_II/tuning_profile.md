@@ -1,3 +1,8 @@
+---
+title: Tuning Profiles (adjusting)
+sidebar_position: 2
+---
+
 # Tuning profiles
 
 - System administrators can optimise the performance of a system by adjusting various devices setting based on a variety of use case workloads.

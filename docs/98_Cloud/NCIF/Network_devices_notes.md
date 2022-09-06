@@ -1,4 +1,9 @@
-# Devices
+---
+title: Network Devices
+sidebar_position: 2
+---
+
+# Network Devices
 
 ## Network Interface Card (NIC)
 

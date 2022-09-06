@@ -1,3 +1,8 @@
+---
+title: Swap Space Concepts
+sidebar_position: 11
+---
+
 # Swap Space Concepts
 
 A swap space is an area of a disk under the control of the Linux kernel memory management subsystem.  

@@ -1,3 +1,8 @@
+---
+title: Inventory
+sidebar_position: 1
+---
+
 # Ansible inventory
 
 Agentless

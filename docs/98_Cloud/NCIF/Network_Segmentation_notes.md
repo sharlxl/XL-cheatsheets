@@ -1,3 +1,8 @@
+---
+title: Network Segmentation
+sidebar_position: 11
+---
+
 # Network Segmentation
 
 ## Network Address Translation

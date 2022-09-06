@@ -1,3 +1,8 @@
+---
+title: Network Cabling
+sidebar_position: 3
+---
+
 # Network Cabling
 
 - Coaxial

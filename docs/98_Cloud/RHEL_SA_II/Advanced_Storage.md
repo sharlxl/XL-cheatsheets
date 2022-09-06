@@ -1,3 +1,8 @@
+---
+title: Advanced storage features
+sidebar_position: 7
+---
+
 # Advanced Storage features
 
 - Stratis

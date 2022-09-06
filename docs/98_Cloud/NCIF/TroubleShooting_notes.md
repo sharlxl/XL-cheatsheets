@@ -1,3 +1,8 @@
+---
+title: Troubleshooting
+sidebar_position: 16
+---
+
 # Fixing Wifi, Computer, Networking problems
 
 # Types of Problems

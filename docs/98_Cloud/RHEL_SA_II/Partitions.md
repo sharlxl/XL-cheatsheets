@@ -1,3 +1,8 @@
+---
+title: Partitions
+sidebar_position: 5
+---
+
 # Partitions
 
 ## Partitioning a Disk

@@ -1,3 +1,8 @@
+---
+title: Logical Volumes
+sidebar_position: 6
+---
+
 # Logical Volume manager
 
 ## Managing Logical Volume Management (LVM) Storage

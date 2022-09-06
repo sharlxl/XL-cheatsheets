@@ -1,3 +1,8 @@
+---
+title: Introduction to YAML
+sidebar_position: 8
+---
+
 # YAML
 
 - configuration files in YAML.

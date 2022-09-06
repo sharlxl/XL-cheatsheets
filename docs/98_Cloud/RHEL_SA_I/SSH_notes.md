@@ -1,3 +1,8 @@
+---
+title: SSH
+sidebar_position: 2
+---
+
 # Configuring and Securing SSH
 
 ## Open SSH

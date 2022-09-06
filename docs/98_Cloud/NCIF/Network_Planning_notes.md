@@ -1,3 +1,8 @@
+---
+title: Planning a Network
+sidebar_position: 5
+---
+
 # Network planning
 
 Many small/medium business utilize an adhoc network design with a break-fix mentality

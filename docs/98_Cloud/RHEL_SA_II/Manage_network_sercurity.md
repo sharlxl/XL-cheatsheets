@@ -1,4 +1,9 @@
-# Manage Network Security
+---
+title: Mamage Network Security
+sidebar_position: 9
+---
+
+Manage Network Security
 
 ## Managing Server Firewalls
 

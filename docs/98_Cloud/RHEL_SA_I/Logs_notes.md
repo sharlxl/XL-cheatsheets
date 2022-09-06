@@ -1,3 +1,8 @@
+---
+title: Logs
+sidebar_position: 3
+---
+
 # Analyzing and Storing Logs
 
 ## SystemLogging

@@ -1,3 +1,8 @@
+---
+title: Managing SElinux
+sidebar_position: 4
+---
+
 # Managing SELinux Security
 
 SELinux aka Security-Enhanced Linux. Security feature of the Linux Kernel
