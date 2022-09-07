@@ -30,4 +30,4 @@ Only Linux operating system is supported as virtual machines
 
 ## Full Virtualisation
 
-ALl operating systems are supported.
+All operating systems are supported.
