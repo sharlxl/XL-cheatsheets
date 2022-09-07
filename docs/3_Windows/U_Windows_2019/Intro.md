@@ -47,3 +47,18 @@ sidebar_position: 1
 #### What is Windows Server 20H2?
 
 The latest ver of 2019
+
+## Server Core vs Window Server with Desktop Experience
+
+Server Core
+Advantages:
+
+- small footprint, uses fewer server resources and less disk space (ard 6GB for basic installation)
+- fewer components = fewer software updates. Reduces the number of monthly restarts required.
+- small attack surface makes Server Core much less vulnerable to exploits.
+
+Disadvantages:
+
+- Some apps not supported on Server Core Installation
+- Some roles and role services are not available
+- No logical GUI
