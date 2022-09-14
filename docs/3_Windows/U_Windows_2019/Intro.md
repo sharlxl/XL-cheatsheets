@@ -24,7 +24,8 @@ sidebar_position: 1
   > 1. Open `cmd` as Admin
   >
   > 2. `slmgr.vbs /ipk WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY` (/ipk = install Product Key)
-  >    `slmgr.vbs /skms kms.digiboy.ir` > `slmgr.vbs /ato` (/ato = Activate Windows)
+  >    `slmgr.vbs /skms kms.digiboy.ir`
+  >    `slmgr.vbs /ato` (/ato = Activate Windows)
   >
   > Other keys to try:
   >
