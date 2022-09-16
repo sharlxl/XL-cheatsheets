@@ -154,9 +154,19 @@ GPOs are processed on a client computer in the following order:
    - AD site (Physical location)
    - Not common to set a GP for site-level
 3. Domain-level GPOs
+   - Apply to all user & computer in Domain
 4. Organisational Unit GPOs
+   - Apply to users & computer in a specific OU
+
+Weak to Strong (Local to Organisation)
 
 ## Altering GP processing
+
+- Block Inheritance
+- Enforced
+- Security filtering
+
+Enforced overwrites block inheritance.
 
 ## Starter GPO
 
